@@ -186,7 +186,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"name\": \"{{clientName}}\",\n  \"throttlingPolicy\": \"Gold\",\n  \"tokenType\":\"JWT\",\n  \"description\": \"Sample calculator application\",\n  \"owner\":\"admin\",\n  \"status\": \"APPROVED\"\n}",
+					"raw": "{\n  \"name\": \"{{clientName}}\",\n  \"throttlingPolicy\": \"Unlimited\",\n  \"tokenType\":\"JWT\",\n  \"description\": \"Sample calculator application\",\n  \"owner\":\"admin\",\n  \"status\": \"APPROVED\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -283,7 +283,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"applicationId\": \"{{applicationId}}\",\n  \"apiId\": \"{{apiId}}\",\n  \"throttlingPolicy\": \"Unlimited\"\n}",
+					"raw": "{\n  \"applicationId\": \"{{applicationId}}\",\n  \"apiId\": \"{{apiId}}\",\n  \"throttlingPolicy\": \"Gold\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
