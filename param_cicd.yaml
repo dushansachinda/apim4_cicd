@@ -1,0 +1,34 @@
+environments:
+    - name: dev
+      configs:
+        endpoints:
+            production:
+                url: 'http://localhost:8595'
+        deploymentEnvironments:
+            - displayOnDevportal: true
+              deploymentEnvironment: Default
+              deploymentVhost : localhost
+        policies:
+            - Gold
+            - Silver 
+    - name: prod
+      configs:
+        endpoints:
+            production:
+                url: 'https://prod.wso2.com'
+                config:
+                    factor: 3
+                    suspendMaxDuration: 25000
+                    suspendDuration: 45000
+                    suspendErrorCode: 
+                        - "101504"
+                        - "101501"
+                    retryTimeOut: $RETRY
+                    retryDelay: 23000
+                    retryErroCode:
+                        - "101503" 
+                        - "101504"
+                    actionSelect: discard
+                    actionDuration: 75000
+            sandbox:
+                url: 'https://prod.sandbox.wso2.com'
