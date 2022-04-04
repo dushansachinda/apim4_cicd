@@ -11,6 +11,18 @@ environments:
         policies:
             - Gold
             - Silver 
+    - name: test
+      configs:
+        endpoints:
+            production:
+                url: 'http://localhost:8595'
+        deploymentEnvironments:
+            - displayOnDevportal: true
+              deploymentEnvironment: Default
+              deploymentVhost : localhost
+        policies:
+            - Gold
+            - Silver 
     - name: prod
       configs:
         endpoints:
